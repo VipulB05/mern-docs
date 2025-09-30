@@ -1,10 +1,17 @@
+'use client'
+
 import { LessonLayout } from "@/components/lesson/lesson-layout"
 import { LessonSection } from "@/components/lesson/lesson-section"
 import { CodeBlock } from "@/components/lesson/code-block"
 import { Badge } from "@/components/ui/badge"
 import { PreviewCard } from "@/components/lesson/preview-card"
+import { BackButton } from "@/components/BackButton"
+import { useRouter } from "next/navigation"
+import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 
 export default function HtmlLessonPage() {
+  const router = useRouter()
   return (
     <LessonLayout
       title="HTML Fundamentals"
@@ -20,6 +27,19 @@ export default function HtmlLessonPage() {
         { href: "#forms", label: "Forms" },
       ]}
     >
+      <div className="mb-4 flex flex-row gap-8">
+          <BackButton label="Back to Home" />
+
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => router.push('/day-1/css')}
+            className="flex items-center gap-2"
+          >
+            Go to CSS
+            <ArrowRight className="h-4 w-4" />
+          </Button>
+      </div>
       <LessonSection id="structure" title="HTML Structure">
         <p className="text-muted-foreground">
           A valid HTML document starts with a doctype, followed by the <Badge variant="outline">html</Badge> root.

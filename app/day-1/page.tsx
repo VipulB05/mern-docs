@@ -1,7 +1,11 @@
+'use client'
+
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { useRouter } from "next/navigation"
+import { ArrowLeft } from "lucide-react"
 
 export default function HomePage() {
   const topics = [
@@ -17,8 +21,19 @@ export default function HomePage() {
     },
   ]
 
+  const router = useRouter()
+
   return (
-    <main className="min-h-dvh">
+    <main>
+      <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => router.push('/')}
+            className="flex items-center gap- m-4"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Home
+          </Button>
       <section className="container mx-auto max-w-5xl px-4 py-12 md:py-16">
         <div className="flex flex-col gap-6">
           <h1 className="text-pretty text-4xl font-semibold tracking-tight md:text-5xl">Learn Web Foundations</h1>

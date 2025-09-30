@@ -1,7 +1,13 @@
+'use client'
+
 import { LessonLayout } from "@/components/lesson/lesson-layout";
 import { LessonSection } from "@/components/lesson/lesson-section";
 import { CodeBlock } from "@/components/lesson/code-block";
 import { PreviewCard } from "@/components/lesson/preview-card";
+import { BackButton } from "@/components/BackButton"
+import { useRouter } from "next/navigation"
+import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 
 function DemoBox() {
   return (
@@ -32,6 +38,7 @@ function DemoBox() {
 }
 
 export default function CssLessonPage() {
+  const router = useRouter()
   return (
     <LessonLayout
       title="CSS Essentials"
@@ -47,6 +54,19 @@ export default function CssLessonPage() {
         { href: "#responsive", label: "Responsive Design" },
       ]}
     >
+      <div className="mb-4 flex flex-row gap-8">
+        <BackButton label="Back to Home" />
+
+        <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => router.push('/day-1/html')}
+            className="flex items-center gap-2"
+          >
+            Go to HTML
+            <ArrowRight className="h-4 w-4" />
+          </Button>
+      </div>
       <LessonSection id="basics" title="Basics (Selectors & Common Properties)">
         <p className="text-muted-foreground">
           Start with simple selectors, colors, spacing, and typography. Practice

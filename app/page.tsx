@@ -4,19 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 
 const courseData = [
-  { day: 0, title: "Student Onboarding", topics: 3 },
   { day: 1, title: "Web Basics (HTML + CSS)", topics: 2 },
-  { day: 2, title: "JavaScript", topics: 4 },
-  { day: 3, title: "React Components & Hooks", topics: 3 },
-  { day: 4, title: "React Router + Context API", topics: 2 },
-  { day: 5, title: "Tailwind CSS + Next.js", topics: 3 },
-  { day: 6, title: "HTTP, REST & Postman", topics: 3 },
-  { day: 7, title: "Node.js + Express.js Basics", topics: 3 },
-  { day: 8, title: "Authentication (JWT)", topics: 3 },
-  { day: 9, title: "Database Integration (MongoDB + CRUD)", topics: 3 },
-  { day: 10, title: "Best Practices", topics: 4 },
-  { day: 11, title: "Full-Stack Integration", topics: 2 },
-  { day: 12, title: "Git + Deployment", topics: 4 },
 ]
 
 export default function CoursePage() {
@@ -24,7 +12,7 @@ export default function CoursePage() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <header className="border-b border-border bg-card">
-        <div className="container mx-auto px-4 py-12 md:py-20">
+        <div className="container mx-auto px-4 py-12 md:py-20 max-w-6xl">
           <div className="max-w-3xl">
             <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20">PESU I/O Bootcamp</Badge>
             <h1 className="mb-4 text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
@@ -51,62 +39,8 @@ export default function CoursePage() {
         </div>
       </header>
 
-      {/* Course Overview */}
-      <section className="container mx-auto px-4 py-12">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <CheckCircle2 className="h-5 w-5 text-primary" />
-                What You&apos;ll Learn
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Build responsive web pages with HTML, CSS, and Tailwind</li>
-                <li>• Master JavaScript (ES6) and DOM manipulation</li>
-                <li>• Create React apps with hooks and routing</li>
-                <li>• Develop backends with Node.js and Express</li>
-                <li>• Work with MongoDB databases</li>
-                <li>• Deploy full-stack applications</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Code className="h-5 w-5 text-primary" />
-                Final Project
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Build a complete MERN web application with multiple pages, authentication, CRUD operations, Context API
-                for state management, and deploy it live on Vercel. Choose any topic you&apos;re passionate about!
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <BookOpen className="h-5 w-5 text-primary" />
-                Course Structure
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Each day includes instructor-led sessions, hands-on assignments, and progressive project work. You&apos;ll
-                build your final project incrementally as you learn new concepts throughout the bootcamp.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
       {/* Daily Syllabus */}
-      <section className="container mx-auto px-4 py-12">
+      <section className="container mx-auto px-4 py-12 max-w-6xl">
         <div className="mb-8">
           <h2 className="mb-2 text-3xl font-bold tracking-tight text-foreground">Daily Syllabus</h2>
           <p className="text-muted-foreground">Click on any day to view detailed lesson content and code examples</p>
@@ -114,7 +48,7 @@ export default function CoursePage() {
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {courseData.map((day) => (
-            <Link key={day.day} href={`/day/${day.day}`}>
+            <Link key={day.day} href={`/day-1`}>
               <Card className="group h-full transition-all hover:border-primary hover:shadow-lg">
                 <CardHeader>
                   <div className="mb-2 flex items-center justify-between">
@@ -136,19 +70,19 @@ export default function CoursePage() {
 
       {/* Instructors */}
       <section className="border-t border-border bg-muted/30">
-        <div className="container mx-auto px-4 py-12">
+        <div className="container mx-auto px-4 py-12 max-w-6xl">
           <h2 className="mb-8 text-2xl font-bold tracking-tight text-foreground">Course Instructors</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:max-w-3xl">
             <Card>
               <CardHeader>
                 <CardTitle>Sumit Santhosh Nair</CardTitle>
-                <CardDescription>SRN: PES1UG23AM324 • CSE (AIML) • Semester 5</CardDescription>
+                <CardDescription>Contact: 9632109324  • CSE (AIML) • Semester 5</CardDescription>
               </CardHeader>
             </Card>
             <Card>
               <CardHeader>
                 <CardTitle>Yathartha Aarush</CardTitle>
-                <CardDescription>SRN: PES1UG23AM358 • CSE (AIML) • Semester 5</CardDescription>
+                <CardDescription>Contact: 9632109324  • CSE (AIML) • Semester 5</CardDescription>
               </CardHeader>
             </Card>
           </div>
