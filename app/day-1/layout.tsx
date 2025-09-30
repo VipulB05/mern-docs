@@ -9,9 +9,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "Day 1: HTML & CSS Lessons | PESU IO Web Developer Bootcamp",
+  description:
+    "Day 1 covers HTML Fundamentals (structure, tags, forms, tables, media) and CSS Essentials (selectors, colors, typography, box model, positioning, flexbox, grid, responsive design) for the PESU IO Web Developer Bootcamp.",
 }
 
 export default function RootLayout({

@@ -28,10 +28,10 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <Button asChild>
-              <Link href="/html">Start with HTML</Link>
+              <Link href="/day-1/html">Start with HTML</Link>
             </Button>
             <Button variant="secondary" asChild>
-              <Link href="/css">Go to CSS</Link>
+              <Link href="/day-1/css">Go to CSS</Link>
             </Button>
           </div>
         </div>
