@@ -28,7 +28,7 @@ Each **topic** has its own page and layout for modular documentation and navigat
 ## 🖥️ Running Locally
 
  1. Clone the repository
-git clone https://github.com/your-username/mern-docs.git
+git clone https://github.com/Yathartha19/mern-docs.git
 cd mern-docs
 
  2. Install dependencies
