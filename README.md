@@ -57,7 +57,8 @@ This project is open-source and available under the MIT License.
 
 
 
-👥 Contributors
+## 👥 Contributors
+
 Yathartha Aarush — Developer, Documentation Author & Technical Reviewer
 
 Sumit Santhosh Nair — Developer, Author & Technical Reviewer
