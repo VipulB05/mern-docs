@@ -39,16 +39,6 @@ npm run dev
 
  4. Open in browser
 http://localhost:3000
-🌗 Features
-⚡ Instant navigation with Next.js App Router
-
-💡 Dark mode toggle with persistent theme
-
-🧠 Clear explanations + copyable code snippets
-
-🪄 Smooth animations and minimal UI
-
-🧱 Extensible — easily add new lessons or technologies
 
 
 
