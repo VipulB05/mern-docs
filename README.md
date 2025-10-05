@@ -50,8 +50,12 @@ http://localhost:3000
 
 🧱 Extensible — easily add new lessons or technologies
 
-📄 License
+
+
+## 📄 License
 This project is open-source and available under the MIT License.
+
+
 
 👥 Contributors
 Yathartha Aarush — Developer, Documentation Author & Technical Reviewer
