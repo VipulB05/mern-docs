@@ -23,7 +23,7 @@ export function LessonLayout({
       </header>
 
       <div className="grid gap-8 md:grid-cols-[220px_minmax(0,1fr)]">
-        <aside className="md:sticky md:top-24 md:h-[calc(100dvh-8rem)] md:overflow-auto">
+        <aside className="md:sticky md:top-24 md:h-[calc(100dvh-8rem)] md:overflow-auto font-bold">
           <nav aria-label="On this page" className="rounded-md border p-3 text-sm">
             <div className="mb-2 font-medium text-muted-foreground">On this page</div>
             <ul className="space-y-2">

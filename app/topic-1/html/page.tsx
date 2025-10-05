@@ -5,10 +5,9 @@ import { LessonSection } from "@/components/lesson/lesson-section"
 import { CodeBlock } from "@/components/lesson/code-block"
 import { Badge } from "@/components/ui/badge"
 import { PreviewCard } from "@/components/lesson/preview-card"
-import { BackButton } from "@/components/BackButton"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, ArrowLeft } from "lucide-react"
 
 export default function HtmlLessonPage() {
   const router = useRouter()
@@ -28,12 +27,20 @@ export default function HtmlLessonPage() {
       ]}
     >
       <div className="mb-4 flex flex-row gap-8">
-          <BackButton label="Back to Home" />
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => router.push('/topic-1')}
+            className="flex items-center gap-2"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back
+          </Button>
 
           <Button
             variant="ghost"
             size="sm"
-            onClick={() => router.push('/day-1/css')}
+            onClick={() => router.push('/topic-1/css')}
             className="flex items-center gap-2"
           >
             Go to CSS

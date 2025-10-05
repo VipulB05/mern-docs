@@ -4,10 +4,9 @@ import { LessonLayout } from "@/components/lesson/lesson-layout";
 import { LessonSection } from "@/components/lesson/lesson-section";
 import { CodeBlock } from "@/components/lesson/code-block";
 import { PreviewCard } from "@/components/lesson/preview-card";
-import { BackButton } from "@/components/BackButton"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, ArrowLeft } from "lucide-react"
 
 function DemoBox() {
   return (
@@ -55,12 +54,20 @@ export default function CssLessonPage() {
       ]}
     >
       <div className="mb-4 flex flex-row gap-8">
-        <BackButton label="Back to Home" />
+        <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => router.push('/topic-1')}
+            className="flex items-center gap-2"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back
+        </Button>
 
         <Button
             variant="ghost"
             size="sm"
-            onClick={() => router.push('/day-1/html')}
+            onClick={() => router.push('/topic-1/html')}
             className="flex items-center gap-2"
           >
             Go to HTML

@@ -43,19 +43,13 @@ export function CodeBlock({ code, language = "html", className, showLineNumbers 
           {({ className: cl, style, tokens, getLineProps, getTokenProps }) => (
             <pre className={cl} style={style} aria-label="Code sample">
               {tokens.map((line, i) => {
-                const lineProps = getLineProps({ line, key: i })
+                const { key, ...lineProps } = getLineProps({ line, key: i })
                 return (
-                  <div key={i} {...lineProps} className={cn(lineProps.className, "table table-fixed w-full")}>
-                    {showLineNumbers && (
-                      <span className="table-cell select-none pr-4 text-right text-xs text-muted-foreground align-top">
-                        {i + 1}
-                      </span>
-                    )}
-                    <span className="table-cell">
-                      {line.map((token, key) => (
-                        <span key={key} {...getTokenProps({ token, key })} />
-                      ))}
-                    </span>
+                  <div key={i} {...lineProps}>
+                    {line.map((token, j) => {
+                      const { key: tokenKey, ...tokenProps } = getTokenProps({ token, key: j })
+                      return <span key={j} {...tokenProps} />
+                    })}
                   </div>
                 )
               })}
