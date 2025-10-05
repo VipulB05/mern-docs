@@ -27,17 +27,17 @@ Each **topic** has its own page and layout for modular documentation and navigat
 
 ## 🖥️ Running Locally
 
-# 1. Clone the repository
+ 1. Clone the repository
 git clone https://github.com/your-username/mern-docs.git
 cd mern-docs
 
-# 2. Install dependencies
+ 2. Install dependencies
 npm install
 
-# 3. Run the development server
+ 3. Run the development server
 npm run dev
 
-# 4. Open in browser
+ 4. Open in browser
 http://localhost:3000
 🌗 Features
 ⚡ Instant navigation with Next.js App Router
