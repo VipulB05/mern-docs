@@ -20,7 +20,6 @@ export default function JavascriptLessonPage() {
         { href: "#es6", label: "ES6 Features" },
         { href: "#array-methods", label: "Array Methods" },
         { href: "#dom", label: "DOM Basics & Events" },
-        { href: "#project", label: "Mini Project" },
       ]}
     >
       {/* ---------- Navigation Buttons ---------- */}
@@ -145,38 +144,6 @@ console.log("Sum:", sum);`}
         />
       </LessonSection>
 
-      {/* ---------- Section 5: Project ---------- */}
-      <LessonSection id="project" title="Mini Project – To-Do List">
-        <p className="text-muted-foreground">
-          Let’s apply what you’ve learned! Build a simple to-do list app with add and remove functionality using the DOM.
-        </p>
-        <PreviewCard
-          title="To-Do List App"
-          language="html"
-          code={`<!-- Simple To-Do App -->
-<h2>To-Do List</h2>
-<input type="text" id="taskInput" placeholder="Enter a task">
-<button id="addBtn">Add Task</button>
-<ul id="taskList"></ul>
-
-<script>
-  const input = document.getElementById("taskInput");
-  const addBtn = document.getElementById("addBtn");
-  const list = document.getElementById("taskList");
-
-  addBtn.addEventListener("click", () => {
-    const task = input.value.trim();
-    if (!task) return;
-
-    const li = document.createElement("li");
-    li.textContent = task;
-    li.addEventListener("click", () => li.remove());
-    list.appendChild(li);
-    input.value = "";
-  });
-</script>`}
-        />
-      </LessonSection>
     </LessonLayout>
   )
 }

@@ -5,9 +5,9 @@ import { GeistMono } from "geist/font/mono"
 import "../globals.css"
 
 export const metadata: Metadata = {
-  title: "Topic 1: HTML & CSS",
+  title: "Topic 2: Javascript Essentials | MERN Docs",
   description:
-    "Topic 1 covers HTML Fundamentals (structure, tags, forms, tables, media) and CSS Essentials (selectors, colors, typography, box model, positioning, flexbox, grid, responsive design).",
+    "JavaScript brings interactivity to web pages. You’ll learn the core language concepts, modern ES6 features, array methods, and basic DOM manipulation.",
 }
 
 export default function RootLayout({
