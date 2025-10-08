@@ -7,7 +7,8 @@ import Link from "next/link"
 
 const courseData = [
   { day: 1, title: "Web Basics (HTML + CSS)", topics: 2 },
-  { day: 2, title: "JavaScript Fundamentals", topics: 1 },
+  { day: 2, title: "JavaScript Essentials", topics: 1 },
+  { day: 3, title: "ReactJs", topics: 1 },
 ]
 
 
