@@ -1,3 +1,4 @@
+
 # MERN Full Stack Developer Documentation
 
 Concise, hands-on documentation that guides learners through the **MERN stack** — from **HTML, CSS, and JavaScript** fundamentals to **React, Node.js, Express, and MongoDB**.  
@@ -5,50 +6,88 @@ Each section includes **clear explanations, live previews, and copyable examples
 
 Each **topic** has its own page and layout for modular documentation and navigation.
 
+To check what contents the doc currently covers go to [Course-Content](https://github.com/sumit-s-nair/mern-docs/tree/main/course-content.md).
+
+## How to contribute
+
+We welcome contributions from everyone!
+
+To contribute:
+1. **Fork** this repository to your own GitHub account.
+2. **Clone** your fork locally:
+	```bash
+	git clone https://github.com/<your-username>/mern-docs.git
+	cd mern-docs
+	```
+3. **Create a new branch** for your feature or fix:
+	```bash
+	git checkout -b my-feature
+	```
+4. **Make your changes** and commit them with clear messages.
+5. **Push** your branch to your fork:
+	```bash
+	git push origin my-feature
+	```
+6. **Open a Pull Request** to the main repository. Please describe your changes and reference any related issues.
+
+Thank you for helping improve this project!
+
+
 ---
 
-## Topics Currently Covered 
 
-### Day 1 – HTML & CSS  
-- HTML structure, semantics, forms, media  
-- CSS fundamentals (selectors, box model, flexbox, grid)  
-- Live code previews and visual demos  
+## Live Preview
 
-### ⚙️ Day 2 – JavaScript  
-- Variables, loops, functions, and objects  
-- ES6 features (arrow functions, destructuring, template literals)  
-- Array methods: `map()`, `filter()`, `reduce()`  
-- DOM manipulation and events  
-- Mini project: To-Do List with add/remove functionality  
-
-*(More coming soon: React, Node.js, Express, MongoDB)*
+Check out the hosted site on Vercel: [mern-docs.vercel.app](https://mern-docs.vercel.app/)
 
 ---
+
 
 ## Running Locally
 
- 1. Clone the repository
-git clone https://github.com/Yathartha19/mern-docs.git
-cd mern-docs
+1. **Clone the repository**
+	```bash
+	git clone https://github.com/sumit-s-nair/mern-docs.git
+	cd mern-docs
+	```
+2. **Install dependencies**
+	```bash
+	npm install
+	```
+3. **Run the development server**
+	```bash
+	npm run dev
+	```
+4. **Open in browser**
+	[http://localhost:3000](http://localhost:3000)
 
- 2. Install dependencies
-npm install
-
- 3. Run the development server
-npm run dev
-
- 4. Open in browser
-http://localhost:3000
 
 
 
-## 📄 License
+## License
 This project is open-source and available under the MIT License.
 
 
 
 ## Contributors
 
-Yathartha Aarush — Developer, Documentation Author & Technical Reviewer
-
-Sumit Santhosh Nair — Developer, Author & Technical Reviewer
+<table>
+	<tr>
+		<td align="center">
+					<a href="https://github.com/Yathartha19">
+						<img src="https://avatars.githubusercontent.com/Yathartha19" width="80" alt="Yathartha Aarush" style="border-radius:50%"/><br/>
+						<sub><b>Yathartha Aarush</b></sub>
+					</a>
+			<br/>
+			<span style="font-size:13px;display:inline-block;max-width:120px;word-break:break-word;white-space:normal;line-height:1.3;text-align:center;">Developer, Author & Technical Reviewer</span>
+		</td>
+		<td align="center">
+					<a href="https://github.com/sumit-s-nair">
+						<img src="https://avatars.githubusercontent.com/sumit-s-nair" width="80" alt="Sumit Santhosh Nair" style="border-radius:50%"/><br/>
+						<sub><b>Sumit Santhosh Nair</b></sub>
+					</a>
+			<br/>
+			<span style="font-size:13px;display:inline-block;max-width:120px;word-break:break-word;white-space:normal;line-height:1.3;text-align:center;">Developer, Author & Technical Reviewer</span>
+		</td>
+	</tr>
+</table>
