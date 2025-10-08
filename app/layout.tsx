@@ -3,7 +3,8 @@ import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import "./globals.css"
-import ThemeToggle from "@/components/ThemeToggle" 
+import { ThemeProvider } from "@/components/theme-provider"
+import Navbar from "@/components/Navbar"
 
 export const metadata: Metadata = {
   title: "MERN Full Stack Documentation",
@@ -17,12 +18,19 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased transition-colors duration-300`}
       >
-        {children}
-        <ThemeToggle />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -37,17 +37,17 @@ export default function HomePage() {
             <ArrowLeft className="h-4 w-4" />
             Home
           </Button>
-      <section className="container mx-auto max-w-5xl px-4 py-12 md:py-16">
-        <div className="flex flex-col gap-6">
-          <h1 className="text-pretty text-4xl font-semibold tracking-tight md:text-5xl">Learn React Fundamentals</h1>
-          <p className="text-muted-foreground max-w-2xl leading-relaxed">
+      <section className="container mx-auto max-w-5xl px-4 py-8 md:py-12 lg:py-16">
+        <div className="flex flex-col gap-4 md:gap-6">
+          <h1 className="text-balance text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight">Learn React Fundamentals</h1>
+          <p className="text-muted-foreground max-w-2xl leading-relaxed text-base md:text-lg">
             Clear, hands-on documentation covering core React concepts — from components and props to hooks and state management. Includes practical examples, live previews, and guided mini projects to help you build dynamic, interactive web applications.
           </p>
         </div>
       </section>
 
-      <section className="container mx-auto max-w-5xl px-4 pb-16">
-        <div className="grid gap-6 md:grid-cols-2">
+      <section className="container mx-auto max-w-5xl px-4 pb-12 md:pb-16">
+        <div className="grid gap-4 md:gap-6 grid-cols-1">
           {topics.map((t) => (
             <Link
               key={t.title}

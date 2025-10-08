@@ -92,25 +92,25 @@ export function PreviewCard({ title, language, code, previewHtml, showLineNumber
   }, [srcDoc])
 
   return (
-    <Card>
+    <Card className="overflow-hidden">
       {title && (
-        <CardHeader>
-          <CardTitle className="text-balance">{title}</CardTitle>
+        <CardHeader className="pb-3">
+          <CardTitle className="text-balance text-base md:text-lg">{title}</CardTitle>
         </CardHeader>
       )}
-      <CardContent>
+      <CardContent className="p-3 md:p-6">
         <Tabs defaultValue="preview" className="w-full">
-          <TabsList>
-            <TabsTrigger value="preview">Preview</TabsTrigger>
-            <TabsTrigger value="code">Code</TabsTrigger>
+          <TabsList className="grid w-full grid-cols-2">
+            <TabsTrigger value="preview" className="text-xs md:text-sm">Preview</TabsTrigger>
+            <TabsTrigger value="code" className="text-xs md:text-sm">Code</TabsTrigger>
           </TabsList>
           <TabsContent value="preview" className="mt-3">
-            <div className="rounded-md border">
+            <div className="rounded-md border overflow-hidden">
               <iframe
                 ref={iframeRef}
                 title={title || "Live preview"}
                 srcDoc={srcDoc}
-                className="h-[200px] w-full rounded-md"
+                className="h-[160px] md:h-[200px] w-full"
                 sandbox="allow-same-origin"
               />
             </div>

@@ -53,22 +53,22 @@ export default function CssLessonPage() {
         { href: "#responsive", label: "Responsive Design" },
       ]}
     >
-      <div className="mb-4 flex flex-row gap-8">
+      <div className="mb-4 flex flex-col sm:flex-row gap-2 sm:gap-4">
         <Button
             variant="ghost"
             size="sm"
             onClick={() => router.push('/topic-1')}
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 justify-center sm:justify-start"
           >
             <ArrowLeft className="h-4 w-4" />
-            Back
+            Back to Topics
         </Button>
 
         <Button
             variant="ghost"
             size="sm"
             onClick={() => router.push('/topic-1/html')}
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 justify-center sm:justify-start"
           >
             Go to HTML
             <ArrowRight className="h-4 w-4" />

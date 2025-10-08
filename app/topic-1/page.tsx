@@ -34,18 +34,18 @@ export default function HomePage() {
             <ArrowLeft className="h-4 w-4" />
             Home
           </Button>
-      <section className="container mx-auto max-w-5xl px-4 py-12 md:py-16">
-        <div className="flex flex-col gap-6">
-          <h1 className="text-pretty text-4xl font-semibold tracking-tight md:text-5xl">Learn Web Foundations</h1>
-          <p className="text-muted-foreground max-w-2xl leading-relaxed">
+      <section className="container mx-auto max-w-5xl px-4 py-8 md:py-12 lg:py-16">
+        <div className="flex flex-col gap-4 md:gap-6">
+          <h1 className="text-balance text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight">Learn Web Foundations</h1>
+          <p className="text-muted-foreground max-w-2xl leading-relaxed text-base md:text-lg">
             Concise, hands-on documentation covering HTML and CSS essentials. Clear explanations, live previews, and
             copyable examples.
           </p>
         </div>
       </section>
 
-      <section className="container mx-auto max-w-5xl px-4 pb-16">
-        <div className="grid gap-6 md:grid-cols-2">
+      <section className="container mx-auto max-w-5xl px-4 pb-12 md:pb-16">
+        <div className="grid gap-4 md:gap-6 sm:grid-cols-1 md:grid-cols-2">
           {topics.map((t) => (
             <Link
               key={t.title}

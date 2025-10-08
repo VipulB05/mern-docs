@@ -30,32 +30,53 @@ export function CodeBlock({ code, language = "html", className, showLineNumbers 
   const prismTheme = theme === "dark" ? themes.vsDark : themes.github
 
   return (
-    <div className={cn("relative rounded-md border bg-card", className)}>
-      <div className="flex items-center justify-between border-b px-3 py-2">
-        <span className="text-xs uppercase tracking-wide text-muted-foreground">{language || "code"}</span>
-        <Button size="sm" variant="outline" onClick={copy} aria-label="Copy code">
+    <div className={cn("relative rounded-md border bg-card overflow-hidden", className)}>
+      <div className="flex items-center justify-between border-b px-3 py-2 bg-muted/50">
+        <span className="text-xs uppercase tracking-wide text-muted-foreground font-medium">
+          {language || "code"}
+        </span>
+        <Button 
+          size="sm" 
+          variant="outline" 
+          onClick={copy} 
+          aria-label="Copy code"
+          className="h-7 px-2 text-xs"
+        >
           {copied ? "Copied" : "Copy"}
         </Button>
       </div>
 
-      <div className="overflow-x-auto p-3 text-sm leading-6">
-        <Highlight theme={prismTheme} code={code.trim()} language={(language as any) || "markup"}>
-          {({ className: cl, style, tokens, getLineProps, getTokenProps }) => (
-            <pre className={cl} style={style} aria-label="Code sample">
-              {tokens.map((line, i) => {
-                const { key, ...lineProps } = getLineProps({ line, key: i })
-                return (
-                  <div key={i} {...lineProps}>
-                    {line.map((token, j) => {
-                      const { key: tokenKey, ...tokenProps } = getTokenProps({ token, key: j })
-                      return <span key={j} {...tokenProps} />
-                    })}
-                  </div>
-                )
-              })}
-            </pre>
-          )}
-        </Highlight>
+      <div className="overflow-x-auto">
+        <div className="p-3 text-sm leading-6 min-w-0">
+          <Highlight theme={prismTheme} code={code.trim()} language={(language as any) || "markup"}>
+            {({ className: cl, style, tokens, getLineProps, getTokenProps }) => (
+              <pre 
+                className={cn(cl, "font-mono text-sm min-w-max")} 
+                style={{...style, background: 'transparent'}} 
+                aria-label="Code sample"
+              >
+                {tokens.map((line, i) => {
+                  const { key, ...lineProps } = getLineProps({ line, key: i })
+                  return (
+                    <div key={i} {...lineProps} className="flex">
+                      {showLineNumbers && (
+                        <span className="select-none pr-4 text-right text-xs text-muted-foreground w-8 flex-shrink-0">
+                          {i + 1}
+                        </span>
+                      )}
+                      <span className="flex-1 min-w-0">
+                        {line.map((token, j) => {
+                          const { key: tokenKey, ...tokenProps } = getTokenProps({ token, key: j })
+                          return <span key={j} {...tokenProps} />
+                        })}
+                      </span>
+                    </div>
+                  )
+                })}
+              </pre>
+            )}
+          </Highlight>
+        </div>
       </div>
     </div>
   )
