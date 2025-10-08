@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* === 🌞 Light Mode === */
+/* === Light Mode === */
 :root {
   --background: oklch(0.99 0.005 255);
   --foreground: oklch(0.16 0.03 255);
@@ -27,7 +27,7 @@
   --radius: 0.625rem;
 }
 
-/* === 🌙 Dark Mode === */
+/* === Dark Mode === */
 .dark {
   --background: oklch(0.18 0.03 255);
   --foreground: oklch(0.98 0.01 255);
@@ -55,8 +55,6 @@
 
 /* === Tailwind Variable Mapping === */
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
