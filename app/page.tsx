@@ -9,6 +9,8 @@ const courseData = [
   { day: 1, title: "Web Basics (HTML + CSS)", topics: 2 },
   { day: 2, title: "JavaScript Essentials", topics: 1 },
   { day: 3, title: "ReactJs", topics: 1 },
+  { day: 4, title: "Tailwind CSS", topics: 1 },
+  { day: 5, title: "NextJs", topics: 1 },
 ]
 
 
