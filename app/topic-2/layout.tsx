@@ -3,9 +3,23 @@ import type { Metadata } from "next"
 import "../globals.css"
 
 export const metadata: Metadata = {
-  title: "Topic 2: Javascript Essentials | MERN Docs",
+  title: "Topic 2: JavaScript Essentials",
   description:
-    "JavaScript brings interactivity to web pages. You’ll learn the core language concepts, modern ES6 features, array methods, and basic DOM manipulation.",
+    "Master JavaScript fundamentals including variables, loops, functions, objects, ES6 features (arrow functions, destructuring, template literals), array methods (map, filter, reduce), DOM manipulation, and events with practical examples.",
+  keywords: [
+    "JavaScript tutorial",
+    "ES6 JavaScript",
+    "JavaScript basics",
+    "DOM manipulation",
+    "JavaScript arrays",
+    "JavaScript functions",
+    "JavaScript ES6 features",
+    "learn JavaScript"
+  ],
+  openGraph: {
+    title: "Topic 2: JavaScript Essentials | MERN Docs",
+    description: "Learn core JavaScript concepts with interactive examples and practical projects.",
+  },
 }
 
 export default function RootLayout({

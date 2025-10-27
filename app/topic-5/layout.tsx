@@ -3,9 +3,24 @@ import type { Metadata } from "next"
 import "../globals.css"
 
 export const metadata: Metadata = {
-  title: "Topic 2: Javascript Essentials | MERN Docs",
+  title: "Topic 5: Next.js Essentials",
   description:
-    "JavaScript brings interactivity to web pages. You’ll learn the core language concepts, modern ES6 features, array methods, and basic DOM manipulation.",
+    "Learn Next.js, the React framework for production. Master server-side rendering, static site generation, API routes, file-based routing, image optimization, and deployment with practical examples.",
+  keywords: [
+    "Next.js tutorial",
+    "Next.js",
+    "React framework",
+    "SSR",
+    "static site generation",
+    "Next.js routing",
+    "Next.js API routes",
+    "learn Next.js",
+    "Next.js deployment"
+  ],
+  openGraph: {
+    title: "Topic 5: Next.js Essentials | MERN Docs",
+    description: "Master Next.js framework with hands-on examples and deployment guides.",
+  },
 }
 
 export default function RootLayout({

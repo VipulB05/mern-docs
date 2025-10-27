@@ -3,9 +3,24 @@ import type { Metadata } from "next"
 import "../globals.css"
 
 export const metadata: Metadata = {
-  title: "Topic 2: Javascript Essentials | MERN Docs",
+  title: "Topic 3: React Essentials",
   description:
-    "JavaScript brings interactivity to web pages. You’ll learn the core language concepts, modern ES6 features, array methods, and basic DOM manipulation.",
+    "Learn React fundamentals including components, JSX, props, state management, React hooks, event handling, routing with React Router, Context API, forms, data fetching, and performance optimization with live examples.",
+  keywords: [
+    "React tutorial",
+    "React hooks",
+    "React components",
+    "React state management",
+    "React Router",
+    "Context API",
+    "learn React",
+    "React JavaScript library",
+    "React best practices"
+  ],
+  openGraph: {
+    title: "Topic 3: React Essentials | MERN Docs",
+    description: "Master React fundamentals with hands-on examples and guided projects.",
+  },
 }
 
 export default function RootLayout({
