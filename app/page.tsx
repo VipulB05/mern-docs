@@ -78,7 +78,7 @@ export default function CoursePage() {
       {/* ---------- AUTHORS ---------- */}
       <section className="border-t border-border bg-muted/30">
         <div className="mx-auto max-w-6xl px-4 py-12">
-          <h2 className="mb-8 text-2xl font-bold tracking-tight text-foreground">Documentation By</h2>
+          <h2 className="mb-8 text-2xl font-bold tracking-tight text-foreground">Contributors</h2>
 
           <div className="grid gap-8 lg:grid-cols-3">
             
@@ -86,6 +86,7 @@ export default function CoursePage() {
               {[
                 { name: "Sumit Santhosh Nair", contact: "CSE (AIML) • Semester 5" },
                 { name: "Yathartha Aarush", contact: "CSE (AIML) • Semester 5" },
+                { name: "Vipul Bohra", contact: "CSE (AIML) • Semester 5" },
               ].map((person) => (
                 <Card
                   key={person.name}
@@ -95,7 +96,7 @@ export default function CoursePage() {
                 >
                   <CardHeader className="relative z-10 flex flex-col gap-2 ">
                     <div className="flex lg:flex-col w-full items-center gap-3">
-                      <div className="mt-2 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary font-semibold">
+                      <div className="mt-3 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary font-semibold">
                         {person.name.split(" ").map((n) => n[0]).join("")}
                       </div>
                       <div>
@@ -115,8 +116,7 @@ export default function CoursePage() {
               ))}
             </div>
 
-            <div className="flex items-center justify-center hover:cursor-pointer" onClick={() => window.open("https://github.com/sumit-s-nair/mern-docs", "_blank")}
->
+            <div className="hover:cursor-pointer" onClick={() => window.open("https://github.com/sumit-s-nair/mern-docs", "_blank")}>
               <Card
                 className="group relative overflow-hidden border border-border/60 bg-card/60 
                           transition-all duration-300 hover:-translate-y-1 hover:shadow-lg 
