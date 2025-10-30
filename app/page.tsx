@@ -78,7 +78,7 @@ export default function CoursePage() {
       {/* ---------- AUTHORS ---------- */}
       <section className="border-t border-border bg-muted/30">
         <div className="mx-auto max-w-6xl px-4 py-12">
-          <h2 className="mb-8 text-2xl font-bold tracking-tight text-foreground">Contributors</h2>
+          <h2 className="mb-8 text-2xl font-bold tracking-tight text-foreground">Authors</h2>
 
           <div className="grid gap-8 lg:grid-cols-3">
             
@@ -86,7 +86,6 @@ export default function CoursePage() {
               {[
                 { name: "Sumit Santhosh Nair", contact: "CSE (AIML) • Semester 5" },
                 { name: "Yathartha Aarush", contact: "CSE (AIML) • Semester 5" },
-                { name: "Vipul Bohra", contact: "CSE (AIML) • Semester 5" },
               ].map((person) => (
                 <Card
                   key={person.name}
@@ -154,6 +153,46 @@ export default function CoursePage() {
             </div>
           </div>
         </div>
+
+        <div className="mx-auto max-w-6xl px-4 pb-12">
+          <h2 className="mb-8 text-2xl font-bold tracking-tight text-foreground">Top Contributors</h2>
+
+          <div className="grid gap-8 lg:grid-cols-3">
+            
+            <div className="lg:col-span-2 grid gap-6 sm:grid-cols-2">
+              {[
+                { name: "Vipul Bohra", contact: "CSE (AIML) • Semester 5" },
+              ].map((person) => (
+                <Card
+                  key={person.name}
+                  className="group relative overflow-hidden border border-border/60 bg-card/60 
+                            transition-all duration-300 hover:-translate-y-1 hover:shadow-lg 
+                            hover:border-primary/60 hover:bg-card/80"
+                >
+                  <CardHeader className="relative z-10 flex flex-col gap-2 ">
+                    <div className="flex lg:flex-col w-full items-center gap-3">
+                      <div className="mt-3 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary font-semibold">
+                        {person.name.split(" ").map((n) => n[0]).join("")}
+                      </div>
+                      <div>
+                        <CardTitle className="text-lg text-center font-semibold transition-colors group-hover:text-primary">
+                          {person.name}
+                        </CardTitle>
+                        <CardDescription className="text-sm text-muted-foreground">
+                          {person.contact}
+                        </CardDescription>
+                      </div>
+                    </div>
+                  </CardHeader>
+
+                  {/* glow overlay */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-primary transition-opacity duration-300" />
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+
       </section>
 
     </div>
