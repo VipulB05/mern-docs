@@ -21,15 +21,15 @@ export default function MongoDBSetupPage() {
         { href: "#verify", label: "Verify Installation" },
       ]}
     >
-      <div className="mb-4 flex flex-row gap-8">
+      <div className="mb-4 flex flex-wrap gap-2">
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => router.push('/topic-6/mongodb')}
+          onClick={() => router.push('/topic-6')}
           className="flex items-center gap-2"
         >
           <ArrowLeft className="h-4 w-4" />
-          Back to MongoDB Lesson
+          Back to Topic 6
         </Button>
       </div>
 

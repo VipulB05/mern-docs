@@ -24,7 +24,7 @@ export default function MongoDBBasicsPage() {
         { href: "#delete", label: "Deleting Data (Delete)" },
       ]}
     >
-      <div className="mb-4 flex flex-row gap-2">
+      <div className="mb-4 flex flex-wrap gap-2">
         <Button
           variant="ghost"
           size="sm"
