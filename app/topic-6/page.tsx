@@ -10,9 +10,19 @@ import { ArrowLeft } from "lucide-react"
 export default function HomePage() {
   const topics = [
     {
-      title: "MongoDB",
-      href: "/topic-6/mongodb",
-      points: ["Setup & Installation", "Connecting from Node.js", "CRUD Operations", "Indexes & Aggregation", "Schema Design", "Security & Deployment"],
+      title: "1. MongoDB Setup",
+      href: "/topic-6/mongodb-setup",
+      points: ["Local Installation", "MongoDB Atlas (Cloud)", "Environment Setup", "PATH Configuration", "Verify Installation"],
+    },
+    {
+      title: "2. MongoDB Basics & CRUD",
+      href: "/topic-6/mongodb-basics",
+      points: ["Understanding MongoDB", "Databases & Collections", "Insert Operations", "Read Operations", "Update Operations", "Delete Operations"],
+    },
+    {
+      title: "3. MongoDB with Node.js",
+      href: "/topic-6/mongodb-nodejs",
+      points: ["Node.js Driver", "Using Mongoose ODM", "Database Indexing", "Aggregation Framework", "Schema Design", "Best Practices"],
     },
   ]
 
