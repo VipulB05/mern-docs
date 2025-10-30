@@ -11,6 +11,7 @@ const courseData = [
   { day: 3, title: "ReactJs", topics: 1 },
   { day: 4, title: "Tailwind CSS", topics: 1 },
   { day: 5, title: "NextJs", topics: 1 },
+  { day: 6, title: "MongoDB", topics: 1 },
 ]
 
 
