@@ -89,5 +89,13 @@ This project is open-source and available under the MIT License.
 			<br/>
 			<span style="font-size:13px;display:inline-block;max-width:120px;word-break:break-word;white-space:normal;line-height:1.3;text-align:center;">Developer, Author & Technical Reviewer</span>
 		</td>
+		<td align="center">
+					<a href="https://github.com/VipulB05">
+						<img src="https://avatars.githubusercontent.com/VipulB05" width="80" alt="Vipul Bohra" style="border-radius:50%"/><br/>
+						<sub><b>Vipul Bohra</b></sub>
+					</a>
+			<br/>
+			<span style="font-size:13px;display:inline-block;max-width:120px;word-break:break-word;white-space:normal;line-height:1.3;text-align:center;">Developer, Contributor & Technical Reviewer</span>
+		</td>
 	</tr>
 </table>
